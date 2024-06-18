@@ -10,3 +10,5 @@ lean_lib «Leanprojectcoolio2» where
 @[default_target]
 lean_exe «leanprojectcoolio2» where
   root := `Main
+
+require mathlib from "/home/mfan/mathlib4"

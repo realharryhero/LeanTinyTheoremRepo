@@ -105,7 +105,6 @@ open Real
 
 open Rat
 
-
 theorem lean_workbook_18_0 : (29 * 31 + 37 - 41) % 4 = 3 := by
   simp [Nat.mod_lt]
 theorem lean_workbook_18_1 : (29 * 31 + 37 - 41) % 4 = 3 := by
@@ -304,7 +303,6 @@ theorem lean_workbook_31_21 (a b c : ℝ) : a^2 + b^2 + c^2 ≥ a * b + b * c + 
 theorem lean_workbook_31_22 (a b c : ℝ) : a^2 + b^2 + c^2 ≥ a * b + b * c + c * a := by
   have h : 0 ≤ (a - b)^2 + (b - c)^2 + (c - a)^2 := by nlinarith
   linarith
-
 theorem lean_workbook_32_0 : 2 * 1^2 + 1 ≤ 3^1 := by
   simp [Nat.pow_one]
 theorem lean_workbook_32_1 : 2 * 1^2 + 1 ≤ 3^1 := by
@@ -495,10 +493,6 @@ theorem lean_workbook_101_14 (x : ℕ) (hx : x = 2^9 + 1) : x = 513 := by
   simp only [hx, show 2 ^ 9 + 1 = 513 by norm_num]
 theorem lean_workbook_101_15 (x : ℕ) (hx : x = 2^9 + 1) : x = 513 := by
   simp [hx, show (2 : ℕ) ^ 9 + 1 = 513 by norm_num]
-theorem lean_workbook_101_16 (x : ℕ) (hx : x = 2^9 + 1) : x = 513 := by
-  simp [hx] at *
-: ℕ) (hx : x = 2^9 + 1) : x = 513 := by
-  simp only [hx, Nat.pow_succ]
 theorem lean_workbook_101_23 (x : ℕ) (hx : x = 2^9 + 1) : x = 513 := by
   exact hx.trans (by norm_num)
 theorem lean_workbook_101_24 (x : ℕ) (hx : x = 2^9 + 1) : x = 513 := by

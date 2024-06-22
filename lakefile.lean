@@ -12,4 +12,4 @@ lean_exe «leanprojectcoolio2» where
   root := `Main
 
 require mathlib from git
-  "https://github.com/realharryhero/mathlib4.7.0cool"
+  "https://github.com/realharryhero/mathlib4.7.0coolio"

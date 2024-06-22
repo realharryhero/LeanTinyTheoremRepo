@@ -11,4 +11,5 @@ lean_lib «Leanprojectcoolio2» where
 lean_exe «leanprojectcoolio2» where
   root := `Main
 
-require mathlib from "/home/mfan/mathlib4"
+require mathlib from git
+  "https://github.com/realharryhero/mathliboldrepo"
